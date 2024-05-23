@@ -85,7 +85,7 @@ h6 {
 }
 
 body {
-  font-size: calc(20px + 1 * (100vw - 320px) / 960);
+  font-size: 21px;
 }
 
 table {
@@ -236,7 +236,7 @@ td {
   background: #4ec171;
 }
 .section__table {
-  font-size: calc(16px + 5 * (100vw - 320px) / 960);
+  font-size: 18px;
 }
 @media (max-width: 479px) {
   .section__table td {

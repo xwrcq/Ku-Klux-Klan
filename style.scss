@@ -37,7 +37,7 @@ $desctop-r: 'min-width: 1599px';
 }
 
 body {
-  @include adaptiveValue("font-size", 21, 20, 0);
+  font-size: 21px;
 }
 
 table {
@@ -265,7 +265,7 @@ td {
   // .section__table
 
   &__table {
-    @include adaptiveValue("font-size", 21, 16, 0);
+    font-size: 18px;
 
     td {
       @media ($mobile) {
