@@ -347,8 +347,8 @@ td {
     width: 400px;
     height: 450px;
 
-    @media ($mobile) {
-      width: 350px; 
+    @media ($tablet) {
+      width: 300px; 
     }
   }
 }
