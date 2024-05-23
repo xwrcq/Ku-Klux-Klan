@@ -297,9 +297,9 @@ td {
   width: 400px;
   height: 450px;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .swiper .swiper-slide {
-    width: 300px;
+    width: 350px;
   }
 }
 
