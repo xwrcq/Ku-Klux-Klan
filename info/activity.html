@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KKK Activity</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../login.js" defer></script>
+  <script src="../header.js" defer></script>
+  <script src="../parallax.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__link">
+          <a href="../index.html" class="list__link">Home</a>
+        </h1>
+        <ul class="header__list list">
+          <li class="list__item">
+            <div class="list__dropdown">
+              <button class="list__dropbtn">info</button>
+              <div class="list__dropdown-content">
+                <a href="./activity.html" class="list__link list__link-dropdown">Activity
+                </a>
+                <a href="./cases.html" class="list__link list__link-dropdown">Cases
+                </a>
+                <a href="./participants.html" class="list__link list__link-dropdown">Participants
+                </a>
+                <a href="./legacy.html" class="list__link list__link-dropdown">Legacy
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <a href="../about.html" class="list__link">About</a>
+          </li>
+          <li class="list__item">
+            <button id="modalLogin" class="list__btn">Login</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="modal-container">
+      <div class="modal-container__content">
+        <a href="#" class="modal-container__cross"></a>
+        <form class="modal-container__form form-modal open" id="form-login">
+          <div class="form-modal__label">Login</div>
+          <div class="form-modal__control">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-modal__input" placeholder="Enter your email" maxlength="50" />
+          </div>
+          <div class="form-modal__control">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+              maxlength="50" />
+          </div>
+          <div class="form-modal__other">
+            <button class="form-modal__btn">Login</button>
+            <div class="form-modal__error"></div>
+          </div>
+          <div class="form-modal__other">
+            <label for="create">
+              Don't have account?
+              <span id="create">Sign up now</span>
+            </label>
+          </div>
+        </form>
+        <form class="modal-container__form form-modal" id="form-reg">
+          <div class="form-modal__label">Registration</div>
+          <div class="form-modal__control">
+            <label for="nickname">Nickname</label>
+            <input type="text" id="nickname" class="form-modal__input" placeholder="Enter your nickname"
+              maxlength="15" />
+            <div class="form-modal__input-err" id="err-nick"></div>
+          </div>
+          <div class="form-modal__control">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-modal__input" placeholder="Enter your email" maxlength="50" />
+            <div class="form-modal__input-err" id="err-email">asd</div>
+          </div>
+          <div class="form-modal__control">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+              maxlength="50" />
+            <div class="form-modal__input-err" id="err-pass"></div>
+          </div>
+          <div class="form-modal__other">
+            <button class="form-modal__btn">Create account</button>
+            <div class="form-modal__error"></div>
+          </div>
+          <div class="form-modal__other">
+            <label for="create">
+              Already have account?
+              <span id="login">Sign in now</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <main class="main">
+      <section class="main__section parallax-1">
+        <div class="flex-container">
+          <div>
+            <h2 class="main__section-title self-center">KKK</h2>
+            <p class="main__description">
+              The Ku Klux Klan (KKK) is a white supremacist hate group that has been active in the United States since
+              its founding in the post-Civil War era. The KKK has gone through several iterations, each characterized by
+              its own methods of terror, targets, and social influence.</p>
+          </div>
+        </div>
+        <h2 class="main__section-title self-center">Historical Phases of the KKK</h2>
+      </section>
+      <section class="main__section parallax-2">
+        <div class="flex-container">
+          <div class="img"><img src="../images/6.jpg" alt="nigger & nigger killers" /></div>
+          <div>
+            <h2 class="main__section-title">First Klan (1865-1871)</h2>
+            <div class="main__description-container">
+              <p class="main__description">
+                Founding and Purpose: Founded in 1865 in Pulaski, Tennessee, by Confederate veterans, the Klan sought to
+                undermine Reconstruction efforts and maintain white supremacy.
+              </p>
+              <p class="main__description">
+                Activities: The group used violence and intimidation against Black people and their allies, including
+                lynchings, beatings, and arson.
+              </p>
+              <p class="main__description">
+                Suppression: The federal government enacted the Enforcement Acts, including the Ku Klux Klan Act of
+                1871, which led to the Klan's decline through legal action and military intervention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section parallax-3">
+        <div class="flex-container">
+          <div>
+            <h2 class="main__section-title">Second Klan (1915-1944)</h2>
+            <div class="main__description-container">
+              <p class="main__description">
+                Rebirth and Growth: Revived in 1915 in Atlanta, Georgia, partly inspired by the film "The Birth of a
+                Nation," which glorified the first Klan. It expanded nationally, peaking in the 1920s with millions of
+                members.
+              <p class="main__description">
+                Ideology and Targets: This iteration broadened its focus to include not only Black people but also Jews,
+                Catholics, immigrants, and other minority groups. It promoted "100% Americanism" and nativism.
+              </p>
+              <p class="main__description">
+                Influence and Decline: The second Klan had significant political influence, particularly in the Midwest
+                and South, but internal scandals and financial troubles led to its decline by the 1940s.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section parallax-4">
+        <div class="flex-container">
+          <div class="img"><img src="../images/4.webp" alt=""></div>
+          <div>
+            <h2 class="main__section-title">Third Klan (Post-World War II to Present)</h2>
+            <div class="main__description-container">
+              <p class="main__description">
+                Civil Rights Era: The Klan re-emerged in response to the Civil Rights Movement, engaging in violent acts
+                such as bombings, murders, and assaults to oppose desegregation and civil rights for Black Americans.
+              <p class="main__description">
+                Modern Era: Today, the Klan is fragmented into various small, independent groups. While its membership
+                and influence are much reduced, it remains active in promoting white supremacist ideology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section parallax-5">
+        <div class="flex-container">
+          <div class="img"><img src="../images/3.jpg" alt=""></div>
+          <div>
+            <h2 class="main__section-title">Modern Activities and Influence</h2>
+            <div class="main__description-container">
+              <p class="main__description">
+                Tactics: Contemporary Klan groups continue to use traditional methods of intimidation, including cross
+                burnings, rallies, and distribution of propaganda. They also use social media and the internet to
+                recruit and spread their message.
+              <p class="main__description">
+                Targets: The Klan still targets Black Americans, Jews, immigrants, LGBTQ+ individuals, and other
+                minority groups.
+              </p>
+              <p class="main__description">
+                Law Enforcement and Legal Actions: The FBI and other law enforcement agencies monitor Klan activities
+                closely. Various Klan groups have been subjected to lawsuits and legal actions that have further
+                diminished their capacity.
+              </p>
+              <p class="main__description">
+                Fragmentation and Alliances: The modern Klan is not a monolithic organization but a collection of small,
+                often competing groups. They sometimes form alliances with other white supremacist and far-right
+                extremist groups.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section parallax-6">
+        <div class="flex-container">
+          <div class="flex-container-2">
+            <h2 class="main__section-title">Impact and Public Perception</h2>
+            <div class="main__description-container">
+              <p class="main__description">
+                Hate Crimes and Domestic Terrorism: The Klan's activities are considered a significant source of hate
+                crimes and domestic terrorism. Their actions contribute to racial tension and violence in the U.S.
+              <p class="main__description">
+                Hate Crimes and Domestic Terrorism: The Klan's activities are considered a significant source of hate
+                crimes and domestic terrorism. Their actions contribute to racial tension and violence in the U.S.
+              </p>
+              <p class="main__description">
+                Online Presence: Modern Klan groups heavily utilize the internet for recruitment and spreading
+                propaganda. Social media platforms, forums, and encrypted messaging apps serve as tools for
+                communication and dissemination of white supremacist ideology.
+              </p>
+              <p class="main__description">
+                Public Demonstrations: While the size and frequency of public rallies have decreased, Klan groups still
+                organize events such as marches, cross burnings, and protests. These events often draw counter-protests
+                and significant media attention.
+              </p>
+              <p class="main__description">
+                Propaganda Distribution: Flyers, leaflets, and other forms of printed propaganda are distributed in
+                neighborhoods, particularly in areas experiencing demographic changes or racial tension. These materials
+                often include racist, anti-Semitic, and xenophobic messages.</p>
+              <p class="main__description">
+                Violent Acts: Acts of violence, including assaults, arson, and threats against minority communities,
+                continue to be perpetrated by Klan members. These hate crimes are intended to instill fear and maintain
+                white supremacy.
+              </p>
+              <p class="main__description">
+                Alliances with Other Extremist Groups: Klan factions sometimes collaborate with other white supremacist
+                and far-right extremist groups, such as neo-Nazis and militia movements. These alliances can enhance
+                their capabilities and extend their reach.</p>
+              <p class="main__description">
+                Contributions to Racial Tension: Klan activities contribute to racial tension and violence in
+                communities across the U.S. Their actions exacerbate divisions and create an atmosphere of fear and
+                hostility.</p>
+              <p class="main__description">
+                Domestic Terrorism: The Klan is recognized as a source of domestic terrorism, responsible for numerous
+                hate crimes and acts of terror. This includes bombings, arson, and physical assaults targeting minority
+                communities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

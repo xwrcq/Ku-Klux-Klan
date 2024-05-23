@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../login.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__link">
+                    <a href="../index.html" class="list__link">Home</a>
+                </h1>
+                <ul class="header__list list">
+                    <li class="list__item">
+                        <div class="list__dropdown">
+                            <button class="list__dropbtn">info</button>
+                            <div class="list__dropdown-content">
+                                <a href="./activity.html"  class="list__link list__link-dropdown">Activity
+                                </a>
+                                <a href="./cases.html" class="list__link list__link-dropdown">Cases
+                                </a>
+                                <a href="./participants.html" class="list__link list__link-dropdown">Participants
+                                </a>
+                                <a href="./legacy.html" class="list__link list__link-dropdown">Legacy
+                                </a>
+                            </div>
+                          </div> 
+                    </li>
+                    <li class="list__item">
+                        <a href="../about.html" class="list__link">About</a>
+                    </li>
+                    <li class="list__item">
+                        <button id="modalLogin" class="list__btn">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="modal-container">
+            <div class="modal-container__content">
+                <a href="#" class="modal-container__cross"></a>
+                <form class="modal-container__form form-modal open" id="form-login">
+                    <div class="form-modal__label">Login</div>
+                    <div class="form-modal__control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-modal__input" placeholder="Enter your email"
+                            maxlength="50" />
+                    </div>
+                    <div class="form-modal__control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+                            maxlength="50" />
+                    </div>
+                    <div class="form-modal__other">
+                        <button class="form-modal__btn">Login</button>
+                        <div class="form-modal__error"></div>
+                    </div>
+                    <div class="form-modal__other">
+                        <label for="create">
+                            Don't have account?
+                            <span id="create">Sign up now</span>
+                        </label>
+                    </div>
+                </form>
+                <form class="modal-container__form form-modal" id="form-reg">
+                    <div class="form-modal__label">Registration</div>
+                    <div class="form-modal__control">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" id="nickname" class="form-modal__input" placeholder="Enter your nickname"
+                            maxlength="15" />
+                            <div class="form-modal__input-err" id="err-nick"></div>
+                    </div>
+                    <div class="form-modal__control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-modal__input" placeholder="Enter your email"
+                            maxlength="50" />
+                            <div class="form-modal__input-err" id="err-email">asd</div>
+                    </div>
+                    <div class="form-modal__control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+                            maxlength="50" />
+                            <div class="form-modal__input-err" id="err-pass"></div>
+                    </div>
+                    <div class="form-modal__other">
+                        <button class="form-modal__btn">Create account</button>
+                        <div class="form-modal__error"></div>
+                    </div>
+                    <div class="form-modal__other">
+                        <label for="create">
+                            Already have account?
+                            <span id="login">Sign in now</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <main class="main">
+            <section class="main__section">
+                <h2 class="main__section-title">Tulsa Race Massacre</h2>
+                <p class="main__description">
+                    In 1921, a violent mob of white supremacists, including members of the KKK, attacked the African American community of Greenwood in Tulsa, Oklahoma. The massacre resulted in the destruction of hundreds of homes and businesses, as well as the death of an estimated 300 Black residents.
+                </p>
+            </section>
+            <section class="main__section">
+                <h2 class="main__section-title">Freedom Summer Murders</h2>
+                <p class="main__description">
+                    During the summer of 1964, also known as Freedom Summer, three civil rights activists were abducted and murdered by members of the KKK in Mississippi. James Chaney, Andrew Goodman, and Michael Schwerner were targeted for their efforts to register African Americans to vote.
+                </p>
+            </section>
+            <section class="main__section">
+                <h2 class="main__section-title">Birmingham Church Bombing</h2>
+                <p class="main__description">
+                    In 1963, the 16th Street Baptist Church in Birmingham, Alabama, was bombed by KKK members, resulting in the deaths of four African American girls: Addie Mae Collins, Cynthia Wesley, Carole Robertson, and Denise McNair. The attack shocked the nation and galvanized support for the civil rights movement.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
