@@ -2,225 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KKK</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.js" defer></script>
-    <script src="carousel.js" defer></script>
-    <script src="login.js" defer></script>
-    <script src="header.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The KKK, a white supremacist organization in the U.S., promotes racism, anti-Black sentiments, and white nationalism. This website provides information about their history and beliefs." />
+  <meta name="keywords"
+    content="Ku Klux Klan, White Supremacy, Far-Right, Terrorist Organization, Anti-Black Racism, White Nationalism" />
+  <meta name="author" content="KuKluxKlan" />
+  <title>KKK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.js" defer></script>
+  <script src="carousel.js" defer></script>
+  <script src="login.js" defer></script>
+  <script src="header.js" defer></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <h1 class="header__link">
-                    <a href="./index.html" class="list__link">Home</a>
-                </h1>
-                <ul class="header__list list">
-                    <li class="list__item">
-                        <div class="list__dropdown">
-                            <button class="list__dropbtn">info</button>
-                            <div class="list__dropdown-content">
-                                <a href="./info/activity.html" class="list__link list__link-dropdown">Activity
-                                </a>
-                                <a href="./info/cases.html" class="list__link list__link-dropdown">Cases
-                                </a>
-                                <a href="./info/participants.html" class="list__link list__link-dropdown">Participants
-                                </a>
-                                <a href="./info/legacy.html" class="list__link list__link-dropdown">Legacy
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <a href="./about.html" class="list__link">About</a>
-                    </li>
-                    <li class="list__item">
-                        <button id="modalLogin" class="list__btn">Login</button>
-                    </li>
-                </ul>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__link">
+          <a href="./index.html" class="list__link">Home</a>
+        </h1>
+        <ul class="header__list list">
+          <li class="list__item">
+            <div class="list__dropdown">
+              <button class="list__dropbtn">info</button>
+              <div class="list__dropdown-content">
+                <a href="./info/activity.html" class="list__link list__link-dropdown">Activity
+                </a>
+                <a href="./info/cases.html" class="list__link list__link-dropdown">Cases
+                </a>
+                <a href="./info/participants.html" class="list__link list__link-dropdown">Participants
+                </a>
+                <a href="./info/legacy.html" class="list__link list__link-dropdown">Legacy
+                </a>
+              </div>
             </div>
-        </header>
-        <div class="modal-container">
-            <div class="modal-container__content">
-                <a href="#" class="modal-container__cross"></a>
-                <form class="modal-container__form form-modal open" id="form-login">
-                    <div class="form-modal__label">Login</div>
-                    <div class="form-modal__control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-modal__input" placeholder="Enter your email"
-                            maxlength="50" />
-                    </div>
-                    <div class="form-modal__control">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
-                            maxlength="50" />
-                    </div>
-                    <div class="form-modal__other">
-                        <button class="form-modal__btn">Login</button>
-                        <div class="form-modal__error"></div>
-                    </div>
-                    <div class="form-modal__other">
-                        <label for="create">
-                            Don't have account?
-                            <span id="create">Sign up now</span>
-                        </label>
-                    </div>
-                </form>
-                <form class="modal-container__form form-modal" id="form-reg">
-                    <div class="form-modal__label">Registration</div>
-                    <div class="form-modal__control">
-                        <label for="nickname">Nickname</label>
-                        <input type="text" id="nickname" class="form-modal__input" placeholder="Enter your nickname"
-                            maxlength="15" />
-                            <div class="form-modal__input-err" id="err-nick"></div>
-                    </div>
-                    <div class="form-modal__control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-modal__input" placeholder="Enter your email"
-                            maxlength="50" />
-                            <div class="form-modal__input-err" id="err-email">asd</div>
-                    </div>
-                    <div class="form-modal__control">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
-                            maxlength="50" />
-                            <div class="form-modal__input-err" id="err-pass"></div>
-                    </div>
-                    <div class="form-modal__other">
-                        <button class="form-modal__btn">Create account</button>
-                        <div class="form-modal__error"></div>
-                    </div>
-                    <div class="form-modal__other">
-                        <label for="create">
-                            Already have account?
-                            <span id="login">Sign in now</span>
-                        </label>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <main class="main">
-            <section class="main__section">
-                <h2 class="main__section-title">About Us</h2>
-                <p class="main__description">
-                    The Ku Klux Klan (KKK) is a white supremacist hate group founded in the United States. Historically,
-                    it has been associated with racism, bigotry, and violence against minority groups.
-                </p>
-            </section>
-            <section class="main__section">
-                <h2 class="main__section-title">Our Mission</h2>
-                <p class="main__description">
-                    Our mission is to promote white supremacy, maintain racial segregation, and intimidate minority
-                    communities through acts of violence and terror.
-                </p>
-            </section>
-            <section class="main__section section">
-                <table class="section__table table">
-                    <tr>
-                        <th>Date</th>
-                        <th>Event</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>December 24, 1865</td>
-                        <td>Formation of KKK</td>
-                        <td>The Ku Klux Klan is formed in Pulaski, Tennessee, by Confederate veterans as a vigilante
-                            group targeting African Americans and their supporters.</td>
-                    </tr>
-                    <tr>
-                        <td>1867-1877</td>
-                        <td>Reconstruction Era</td>
-                        <td>The KKK engages in widespread violence, intimidation, and murder aimed at suppressing the
-                            rights and freedoms of African Americans during the Reconstruction era following the Civil
-                            War.</td>
-                    </tr>
-                    <tr>
-                        <td>1920s</td>
-                        <td>Resurgence</td>
-                        <td>The KKK experiences a resurgence, particularly in the Midwest and South, targeting not only
-                            African Americans but also immigrants, Catholics, Jews, and other minority groups.</td>
-                    </tr>
-                    <tr>
-                        <td>1960s</td>
-                        <td>Civil Rights Movement</td>
-                        <td>The KKK vehemently opposes the Civil Rights Movement, engaging in bombings, assassinations,
-                            and other acts of violence against activists, including the infamous bombing of the 16th
-                            Street Baptist Church in Birmingham, Alabama.</td>
-                    </tr>
-                    <tr>
-                        <td>Present</td>
-                        <td>Continued Existence</td>
-                        <td>While not as prominent as in its earlier years, various factions of the KKK still exist
-                            today, perpetuating hate and racial discrimination through rallies, propaganda, and hate
-                            crimes.</td>
-                    </tr>
-                </table>
-            </section>
-            <section class="main__section">
-                <div class="carousel-wrapper">
-                    <div class="carousel">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/1.webp" alt="nigger killers" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/3.jpg" alt="nigger killer" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/4.webp" alt="nigger killers" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/5.webp" alt="niggers" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/7.webp" alt="nigger killers" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single">
-                                        <img src="./images/8.webp" alt="nigger killers" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </li>
+          <li class="list__item">
+            <a href="./about.html" class="list__link">About</a>
+          </li>
+          <li class="list__item">
+            <button id="modalLogin" class="list__btn">Login</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="modal-container">
+      <div class="modal-container__content">
+        <a href="#" class="modal-container__cross"></a>
+        <form class="modal-container__form form-modal open" id="form-login">
+          <div class="form-modal__label">Login</div>
+          <div class="form-modal__control">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-modal__input" placeholder="Enter your email" maxlength="50" />
+          </div>
+          <div class="form-modal__control">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+              maxlength="50" />
+          </div>
+          <div class="form-modal__other">
+            <button class="form-modal__btn">Login</button>
+            <div class="form-modal__error"></div>
+          </div>
+          <div class="form-modal__other">
+            <label for="create">
+              Don't have account?
+              <span id="create">Sign up now</span>
+            </label>
+          </div>
+        </form>
+        <form class="modal-container__form form-modal" id="form-reg">
+          <div class="form-modal__label">Registration</div>
+          <div class="form-modal__control">
+            <label for="nickname">Nickname</label>
+            <input type="text" id="nickname" class="form-modal__input" placeholder="Enter your nickname"
+              maxlength="15" />
+            <div class="form-modal__input-err" id="err-nick"></div>
+          </div>
+          <div class="form-modal__control">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-modal__input" placeholder="Enter your email" maxlength="50" />
+            <div class="form-modal__input-err" id="err-email">asd</div>
+          </div>
+          <div class="form-modal__control">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-modal__input" placeholder="Enter your password"
+              maxlength="50" />
+            <div class="form-modal__input-err" id="err-pass"></div>
+          </div>
+          <div class="form-modal__other">
+            <button class="form-modal__btn">Create account</button>
+            <div class="form-modal__error"></div>
+          </div>
+          <div class="form-modal__other">
+            <label for="create">
+              Already have account?
+              <span id="login">Sign in now</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <main class="main">
+      <section class="main__section">
+        <h2 class="main__section-title">About Us</h2>
+        <p class="main__description">
+          The Ku Klux Klan (KKK) is a white supremacist hate group founded in the United States. Historically,
+          it has been associated with racism, bigotry, and violence against minority groups.
+        </p>
+      </section>
+      <section class="main__section">
+        <h2 class="main__section-title">Our Mission</h2>
+        <p class="main__description">
+          Our mission is to promote white supremacy, maintain racial segregation, and intimidate minority
+          communities through acts of violence and terror.
+        </p>
+      </section>
+      <section class="main__section section">
+        <table class="section__table table">
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>December 24, 1865</td>
+            <td>Formation of KKK</td>
+            <td>The Ku Klux Klan is formed in Pulaski, Tennessee, by Confederate veterans as a vigilante
+              group targeting African Americans and their supporters.</td>
+          </tr>
+          <tr>
+            <td>1867-1877</td>
+            <td>Reconstruction Era</td>
+            <td>The KKK engages in widespread violence, intimidation, and murder aimed at suppressing the
+              rights and freedoms of African Americans during the Reconstruction era following the Civil
+              War.</td>
+          </tr>
+          <tr>
+            <td>1920s</td>
+            <td>Resurgence</td>
+            <td>The KKK experiences a resurgence, particularly in the Midwest and South, targeting not only
+              African Americans but also immigrants, Catholics, Jews, and other minority groups.</td>
+          </tr>
+          <tr>
+            <td>1960s</td>
+            <td>Civil Rights Movement</td>
+            <td>The KKK vehemently opposes the Civil Rights Movement, engaging in bombings, assassinations,
+              and other acts of violence against activists, including the infamous bombing of the 16th
+              Street Baptist Church in Birmingham, Alabama.</td>
+          </tr>
+          <tr>
+            <td>Present</td>
+            <td>Continued Existence</td>
+            <td>While not as prominent as in its earlier years, various factions of the KKK still exist
+              today, perpetuating hate and racial discrimination through rallies, propaganda, and hate
+              crimes.</td>
+          </tr>
+        </table>
+      </section>
+      <section class="main__section">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/1.webp" alt="nigger killers" />
+                  </div>
                 </div>
-            </section>
-            <section class="main__section section">
-                <!-- <div class="section__wrapper">
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/3.jpg" alt="nigger killer" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/4.webp" alt="nigger killers" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/5.webp" alt="niggers" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/7.webp" alt="nigger killers" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single">
+                    <img src="./images/8.webp" alt="nigger killers" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section section">
+        <!-- <div class="section__wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Msk8RJqE4KA?si=uSzf7A8h-ynle2lA"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div> -->
-            </section>
-            <section class="main__section section">
-                <div class="section__label">Join KKK</div>
-                <form class="section__form form">
-                    <label for="fname" class="form__label">First name:</label>
-                    <input type="text" id="fname" name="fname" class="form__input">
-                    <label for="lname" class="form__label">Last name:</label>
-                    <input type="text" id="lname" name="lname" class="form__input">
-                    <input type="submit" value="Submit" class="form__input submit-input">
-                </form>
-            </section>
-        </main>
-    </div>
+      </section>
+      <section class="main__section section">
+        <div class="section__label">Join KKK</div>
+        <form class="section__form form">
+          <label for="fname" class="form__label">First name:</label>
+          <input type="text" id="fname" name="fname" class="form__input">
+          <label for="lname" class="form__label">Last name:</label>
+          <input type="text" id="lname" name="lname" class="form__input">
+          <input type="submit" value="Submit" class="form__input submit-input">
+        </form>
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>

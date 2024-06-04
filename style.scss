@@ -10,32 +10,6 @@ $lapton: 'max-width: 1023px';
 $desctop: 'max-width: 1599px';
 $desctop-r: 'min-width: 1599px';
 
-
-@mixin adaptiveValue($property, $startSize, $minSize, $type) {
-	$addSize: $startSize - $minSize;
-
-	@if $type==1 {
-		#{$property}: $startSize + px;
-
-		@media(max-width: #{$maxWidthContainer + px}) {
-			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
-		}
-	}
-
-	@else if $type==2 {
-		#{$property}: $startSize + px;
-
-		@media(min-width: #{$maxWidthContainer + px}) {
-			#{$property}: calc(#{$minSize + px } + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
-		}
-
-	}
-
-	@else {
-		#{$property}: calc(#{$minSize + px } + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
-	}
-}
-
 body {
   font-size: 21px;
 }
@@ -63,10 +37,6 @@ td {
   width: 100vw;
   height: 48px;
   z-index: 100;
-
-  // @media ($mobile) {
-  // 	display: none;
-  // }
 
   &-scroll {
     background: #f0ebeb;
@@ -116,7 +86,6 @@ td {
     vertical-align: middle;
     position: relative;
     display: inline-block;
-    //max-width: 400px;
   }
 
   &__link-dropdown {
@@ -196,7 +165,6 @@ td {
 .main {
   display: flex;
   flex-direction: column;
-  //gap: 20px;
   padding-top: 48px;
   width: 100%;
   overflow: hidden;
@@ -207,12 +175,7 @@ td {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    //align-items: center;
     gap: 5px;
-
-    @media ($mobile) {
-      //padding: 20px;
-    }
   }
 
   // .main__section-title
@@ -543,35 +506,30 @@ img {
 .parallax-1 {
   position: relative;
   background: #DCDCDC;
-  //height: 25vh;
   z-index: 1;
 }
 
 .parallax-2 {
   position: relative;
   background: #D3D3D3;
-  //height: 25vh;
   z-index: 2;
 }
 
 .parallax-3 {
   position: relative;
   background: #C0C0C0;
-  //height: 25vh;
   z-index: 3;
 }
 
 .parallax-4 {
   position: relative;
   background: #A9A9A9;
-  //height: 100vh;
   z-index: 4;
 }
 
 .parallax-5 {
   position: relative;
   background: #808080;
-  //height: 30vh;
   z-index: 5;
 }
 
