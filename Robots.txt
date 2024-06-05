@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: /Sitemap.xml
+Sitemap: https://xwrcq.github.io/Ku-Klux-Klan/sitemap.xml
